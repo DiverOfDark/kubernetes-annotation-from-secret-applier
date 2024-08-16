@@ -1,0 +1,16 @@
+[package]
+name = "kubernetes-annotation-from-secret-applier"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+kube = { version = "0.93.1", features = ["derive", "runtime", "client"] }
+k8s-openapi = { version ="0.22.0", features = ["v1_28"] }
+serde = { version = "1.0.206", features = ["derive"] }
+tokio = { version = "1.39.2", features = ["full"] }
+tracing = "0.1.40"
+tracing-subscriber = "0.3.18"
+anyhow = "1.0.86"
+serde_json = "1.0.124"
+futures = "0.3.30"
+base64 = "0.22.1"
